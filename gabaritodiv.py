@@ -51,8 +51,10 @@ OPÇÃO: '''))
         if questao == 1:
             a = float(input('Digite o nivel da interseção direita do alinhamento: '))
             b = float(input('Digite o nivel a interseção esquerda do alinhamento: '))
-            add = float(input('Digite o afastamento minimo da divisa direita: '))
-            ade = float(input('Digite o afastamento minimo da divisa esquerda: '))
+            add = float(input('''Digite o afastamento minimo da divisa direita
+[Caso não haja afastamento digite '0']: '''))
+            ade = float(input('''Digite o afastamento minimo da divisa esquerda
+[Caso não haja afastamento digite '0']: '''))
 
             hed = (add * tan(radians(60))) + 17.50
             hee = (ade * tan(radians(60))) + 17.50
@@ -74,8 +76,10 @@ de acordo com os níveis informados será de \033[1m{hee + b:.3f}m\033[m.
         elif questao == 2:
             a = float(input('Digite o nivel do ponto médio da lateral direita: '))
             b = float(input('Digite o nivel do ponto médio da lateral esquerda: '))
-            add = float(input('Digite o afastamento minimo da divisa direita: '))
-            ade = float(input('Digite o afastamento minimo da divisa esquerda: '))
+            add = float(input('''Digite o afastamento minimo da divisa direita 
+[Caso não haja afastamento digite '0']: '''))
+            ade = float(input('''Digite o afastamento minimo da divisa esquerda 
+[Caso não haja afastamento digite '0']: '''))
 
             hed = (add * tan(radians(60))) + 17.50
             hee = (ade * tan(radians(60))) + 17.50
@@ -94,3 +98,4 @@ de acordo com os níveis informados será de \033[1m{hed + a:.3f}m\033[m.''')
             print(f'''A altura máxima da sua edificação na lateral esquerda 
 de acordo com os níveis informados será de \033[1m{hee + b:.3f}m\033[m.
 ''')
+#    elif pergunta0 == 3:
