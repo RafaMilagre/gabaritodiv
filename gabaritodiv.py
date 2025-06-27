@@ -1,5 +1,4 @@
 from math import tan, radians
-a = b = l = 1
 
 while True:
     print('='*40)
@@ -85,8 +84,8 @@ de acordo com os níveis informados será de \033[1m{hee + b:.3f}m\033[m.
             print('=' * 40)
             print(f'{'CÁLCULO DE GABARITO LATERAL DIREITA':^40}')
             print('=' * 40)
-print(f'''A altura máxima da sua edificação na lateral direita 
-        de acordo com os níveis informados será de \033[1m{hed + a:.3f}m\033[m.''')
+            print(f'''A altura máxima da sua edificação na lateral direita 
+de acordo com os níveis informados será de \033[1m{hed + a:.3f}m\033[m.''')
 
             print('')
             print('=' * 40)
