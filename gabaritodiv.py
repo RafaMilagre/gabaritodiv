@@ -1,2 +1,2 @@
-var = 'Hello word'
+var = 'Hello world'
 print(var)
